@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Tics</title>
+   <link rel="stylesheet" href="css/estilos.css">
+   <link rel="stylesheet" href="js/modal.js">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   <script>
+      $(document).ready(function(){
+         $("#mostrarmodal").modal("show");
+      });
+    </script>
+
+</head>
+<body style="background-color: lightblue;" >
+<section class="a">
+ <div class="modal fade"data-backdrop="static" data-keyboard="false"id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">  
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <div class="modal-header">
+              <h3><center><u>Politicas de privacidad</u></center></h3>
+           </div>
+           <div class="modal-body" aling="center" >
+                  <span class="ref">
+                     La Política de Privacidad establece los términos en que Tics usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. 
+                     Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. 
+                     Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+                     Información que es recogida.Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como  su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.
+                     Uso de la información recogida
+                  </span> 
+                  <br> <br>
+                  <span class="ref">
+                     Al hacer clic en Aceptar reconoce que ha leído,comprendido y aceptado todos los contenidos de la Política de privacidad.
+                     Por favor dedique unos minutos de su tiempo para leer la Política de privacidad.
+                     Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros.
+                  </span>
+                 </div>
+      		</div>
+          	 <div class="modal-footer"> <center>
+          		<a href="#" data-dismiss="modal" class="btn btn-danger btn-lg">Aceptar</a>
+          		</center>
+          	 </div>
+     	 	</div>
+  	 	</div>
+	</div>
+</section>
+	 <div class="login-box" >
+        <!-- USERNAME INPUT -->
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter Username">
+        <!-- PASSWORD INPUT -->
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Password">
+        <input type="submit" value="Iniciar ">
+        <a href="#">Lost your Password?</a><br>
+        <a href="#">Don't have An account?</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+.body{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.modal-body {
+  width: 100%;
+  height: 55vh;
+  text-decoration-thickness: unset;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.modal-header{
+font-family: 'Open Sans', sans-serif;
+font-weight: negrita;
+content: "Reference: ";
+}
+.ref::before {
+font-weight: negrita;
+color: navy;
+
+}
+
+.login-box {
+  width: 300px;
+  height: 400px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+.contenido {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background: white;
+    border-radius: 10px;
+}
+
+#cerrar {
+    display: none;
+}
+
+#cerrar + label {
+    position: absolute;
+    color: #fff;
+    font-size: 55px;
+    z-index: 50;
+    background: darkred;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 150px;
+    top: 150px;
+    cursor: pointer;
+
+    animation: modal 1s 1s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal  {
+    display: none;
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
